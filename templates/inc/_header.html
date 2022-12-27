@@ -1,0 +1,16 @@
+{% load menu %}
+<header class="header">
+    <div class="container">
+        <nav>
+            {% show_menu %}
+        </nav>
+        <div class="newsletter">
+            <h2 class="sidebar-title">Поиск</h2>
+            <form action="{% url 'search' %}" method="get">
+                <input type="text" name="s" placeholder="Поиск...">
+                <button type="submit">Поиск</button>
+            </form>
+        </div>
+    </div>
+
+</header>
